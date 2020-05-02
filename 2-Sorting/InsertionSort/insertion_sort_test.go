@@ -2,12 +2,13 @@ package InsertionSort
 
 import (
 	"reflect"
+	"sort"
 	"testing"
 )
 
 var testCases = []struct {
-	object   IntegerSlice
-	expected IntegerSlice
+	object   sort.Interface
+	expected sort.Interface
 }{
 	{
 		IntegerSlice{101, 100, 90, 89, 55, 44, 23, 20},
